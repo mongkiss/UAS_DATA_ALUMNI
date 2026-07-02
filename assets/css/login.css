@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    font-family:'Segoe UI',sans-serif;
+    overflow:hidden;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+
+    background:url("../img/WhatsApp-Image-2025-05-08-at-112038-500066706.jpeg") center center/cover no-repeat;
+
+    filter:blur(10px);
+    transform:scale(1.08);
+
+    z-index:-2;
+}
+
+/* Dark overlay */
+
+.overlay{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    z-index:-1;
+}
+
+/* Center login */
+
+.login-wrapper{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+/* Glass Card */
+
+.card{
+    width:100%;
+    max-width:400px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:20px;
+
+    color:white;
+}
+
+.card-body{
+    padding:40px;
+}
+
+/* Logo */
+
+img{
+    border-radius:50%;
+}
+
+/* Title */
+
+h2{
+    font-weight:700;
+}
+
+/* Input */
+
+.form-control{
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:12px 15px;
+}
+
+.form-control::placeholder{
+    color:rgba(255,255,255,.75);
+}
+
+.form-control:focus{
+    background:rgba(255,255,255,.2);
+
+    color:white;
+
+    border-color:#ffffff;
+
+    box-shadow:none;
+}
+
+/* Button */
+
+.btn{
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Link */
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
